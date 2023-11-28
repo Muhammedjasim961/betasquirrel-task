@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task-3</title>
+    <link href="image/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="image/assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="image/assets/fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="image/site.webmanifest">
+    <link rel="mask-icon" href="image/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -19,18 +29,30 @@
     <div class="container">
     <div id="sidebar">
         <nav>
-            <a href="#">Students</a>
-            <a href="#">Staff</a>
-            <a href="#">Exam</a>
+            <a href="#" class="flex">
+                <!-- <img src="image/student.png" alt="student" /> -->
+                <i class="fa-solid fa-user"></i>
+                Students
+            </a>
+            <a href="#"class="flex">
+                <!-- <img src="image/staff.png" alt="staff" /> -->
+                <i class="fa-solid fa-user-secret"></i>
+                Staff
+            </a>
+            <a href="#"class="flex" >
+                <!-- <img src="image/exam.png" alt="Exam" /> -->
+                <i class="fa-solid fa-user-graduate"></i>
+                Exam
+            </a>
         </nav>    
     </div>
     <div class="content">
     <div class="heading">
         <h2>Students</h2>
-        <h3>Add students</h3>
+        <a href="addmission.html" class="link-btn">Add Students</a>
     </div>
     <div class="table">
-        <table>
+        <table class="list-table">
             <tr>
                 <th>R.No</th>
                 <th>Name</th>
@@ -66,6 +88,43 @@
                 <td>@mail.com</td>
                 <td>New York st.USA</td>
             </tr>
+        </table>
+        <table class="colored-table">
+            <tr>
+                <th>Full Name</th>
+                <td>jomon</td>
+                <td>kalarikkal</td>
+            </tr>
+            <tr>
+                <th>mobile</th>
+                <td>09887765454</td>
+                <td>253764858</td>
+            </tr>
+        </table>
+        <table>
+            <caption>Students</caption>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Mobile</th>
+            </tr>
+                <td>jon</td>
+                <td>honayi</td>
+                <td>0999776</td>
+        </table>
+        <table>
+            <tr>
+                <th>name</th>
+                <td>jourge</td>
+            </tr>
+            <tr>
+                 <th rowspan="2">number</th>
+                <td>64737233</td>
+               
+            </tr>
+            <tr>
+                 <td>0988765</td>
+            </tr>
+           
         </table>
     </div>
 </div>

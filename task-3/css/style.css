@@ -8,6 +8,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    top: fixed;
+
 }
 .logo-container img {
     width: 65px;
@@ -29,7 +31,7 @@ body {
 #sidebar {
     border-right: 2px solid #5555;
     width: 300px;
-    height: calc(100vh - 82px);
+    height: calc(120vh - 82px);
     float: left;
 }
 #sidebar nav {
@@ -53,6 +55,8 @@ body {
     width: calc(100% - 302px);
     height: 100%;
     float: right;
+    overflow-y: auto;
+    padding-bottom: 20px;
 }
 .heading {
     display: flex;
@@ -60,25 +64,40 @@ body {
 }
 .heading h2 {
     margin: 0;
-    padding: 30px 0px 0px 15px;
-    text-transform: uppercase;
-}
-.heading h3 {
-    background-color: #05C677;
-    width: fit-content;
-    margin-right: 10px;
     padding: 15px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.heading a {
+    margin: 15px 10px 15px 0px;
+    text-decoration: none;
+    background-color: #05C677;
     color: #fff;
+    padding: 15px;
+    border-radius: 10%;
 }
 table {
-    width: 100%;
+    width: 75vw;
     border: 1px solid #555;
-    margin: 15px 10px 0px 10px;
+    margin: 0px 0px 10px 13px;
+      border-collapse: collapse;  
+}
+ .list-table th,
+  .list-table td,
+   table {
+    border: none;
     border-collapse: collapse;
-    
+}
+.colored-table th, 
+.colored-table td {
+     border-bottom: 2px solid #555;
+}
+.colored-table th, 
+.colored-table td {
+    border-collapse: collapse;
 }
 th, td {
-    border: 1px solid #555;
+    border: 2px solid #555;
     padding: 10px;
 }
 td:first-child, 
@@ -86,11 +105,156 @@ th:first-child  {
     text-align: center;
 }
 th {
-    text-align: left;
-}
-th {
     text-transform: uppercase;
+      text-align: left;
 }
-.heading h3:hover {
+.list-table tr:hover, 
+.list-table tr:hover  td {
+    background-color: #05C677;
+}
+.heading a:hover {
     color: #555;
+}
+caption {
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.list-table tr:nth-child(even) {
+    background-color: greenyellow;
+}
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-container {
+    margin-left: 15px;
+}
+.form-container input {
+    height: 25px;
+    color: #555;
+    width: 80%;
+}
+.red-text {
+    color: red;
+}
+.input-container {
+    width: 50%;
+    margin-bottom: 20px;
+    float: left;
+}
+ input,
+ input:active,
+ input:focus-visible, 
+ input:focus {
+      outline: none;
+      border: 2px solid #5555;
+      padding: 5px;
+}
+ input:active,
+ input:focus-visible, 
+ input:focus {
+    border-color: #a259ff;
+ }
+select {
+    height: 37px;
+    padding: 5px;
+    border: 2px solid #5555;
+    outline: none;
+    width: 83%;
+    color: #555;
+}
+.wrapper input {
+    width: auto;
+}
+.wrapper {
+    margin-top: 5px;
+    width: 15%;
+    float: left;
+    align-items: center;
+    display: inline-flex !important;
+    margin-bottom: 0;
+    line-height: 30px;
+    color: #555;
+}
+.check-wrapper {
+    width: auto;
+    margin-right: 6px;
+}
+textarea {
+    display: flex;
+    margin-top: 5px;
+    width: 80%;
+    border: 2px solid #5555;
+    outline: none;
+    color: #555;
+}
+.m-l {
+    margin-left: 15px;
+}
+input[type='submit'], 
+input[type=reset] {
+     padding: 10px 15px;
+     width: auto;
+     color: #fff;
+     border: none;
+     font-weight: bold;
+     border-radius: 30px;
+}
+input[type='submit'] {
+    background-color: #3cb989;
+}
+input[type=reset] {
+    background-color: #ff7262;
+}
+.right {
+    text-align: right;
+    float: inline-end;
+    margin-right: 90px;
+}
+
+@media only screen and (max-width: 767px) {
+    #sidebar {
+        display: none;
+    }
+    .content {
+    width: 100%;
+    overflow-x: scroll;
+   
+    }
+    table {
+        width: calc(100% - 35px);
+    }
+   .input-container {
+    width: 100%;
+   }
+ input, textarea
+ input:active,
+ input:focus-visible, 
+ input:focus {
+    width: 100%;
+ }
+    
+
+}
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+    table {
+        width: calc(100%  - 28px);
+        margin-right: 10px;
+    }
+    #sidebar {
+        height: 625px;
+    }
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+nav img, nav i {
+    height: 25px;
+    margin-right: 10px;
+}
+nav i {
+    /* vertical-align: 28px !important; */
+    line-height: 25px !important;
 }
