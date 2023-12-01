@@ -1,0 +1,23 @@
+.navbar  {
+    background-color: #d6121255;
+}
+button {
+    background-color: #04aa6d !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 6px 0px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.nav-item .nav-link {
+    color: #fff;
+
+}
+.nav-item .nav-link.active {
+    color: #04aa6d;
+}
