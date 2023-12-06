@@ -1,0 +1,179 @@
+.borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(../img/border-image.png) 30 round;
+}
+.text {
+    color: red;
+}
+
+#example1 {
+    background-image: url(../img/cars.png), url(../img/papper.jpeg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+    height: 120px;
+    width: 150px;
+    background-size: cover;
+}
+/* body {
+    background-image: url(../img/favicon.ico)  center fixed;
+    background-size: cover;
+} */
+
+
+/* rgba-color */
+ #p1 {background-color:rgba(255,0,0,0.3);}
+#p2 {background-color:rgba(0,255,0,0.3);}
+#p3 {background-color:rgba(0,0,255,0.3);}
+#p4 {background-color:rgba(192,192,192,0.3);}
+#p5 {background-color:rgba(255,255,0,0.3);}
+#p6 {background-color:rgba(255,0,255,0.3);}
+#p7 {background-color: rgba(255,255,0,0.3);}  
+/* hsl color */
+#p1 {background-color:hsl(120,100%,50%);}
+#p2 {background-color:hsl(120,100%,75%);}
+#p3 {background-color:hsl(120,100%,25%);}
+#p4 {background-color:hsl(120,60%,70%);}
+#p5 {background-color:hsl(290,100%,50%);}
+#p6 {background-color:hsl(290,60%,70%);}
+#p7 {background-color: hsl(240,90%,40%);}
+/* hsla alpha */
+#p1 {background-color:hsla(120,100%,50%, 0.3);}
+#p2 {background-color:hsla(120,100%,75%,0.3);}
+#p3 {background-color:hsla(120,100%,25%,0.3);}
+#p4 {background-color:hsla(120,60%,70%,0.3);}
+#p5 {background-color:hsla(290,100%,50%,0.3);}
+#p6 {background-color:hsla(290,60%,70%,0.3);}
+/* opacity color */ light color
+#p1 {background-color:rgb(255,0,0);opacity:0.6;}
+#p2 {background-color:rgb(0,255,0);opacity:0.6;}
+#p3 {background-color:rgb(0,0,255);opacity:0.6;}
+#p4 {background-color:rgb(192,192,192);opacity:0.6;}
+#p5 {background-color:rgb(255,255,0);opacity:0.6;}
+#p6 {background-color:rgb(255,0,255);opacity:0.6;}
+
+
+.ex1 {
+    background-color: rgb(255,255,0);
+    border: 2px solid #555;
+    padding: 15px;
+}
+.ex2 {
+    background-color: transparent;
+    border: 4px solid #555;
+    padding: 15px;
+    /* border-image: url(../img/papper.jpeg); */
+}
+.grad1 {
+    /* background-image: linear-gradient(to right, red , yellow); */
+    height: 300px;
+    width: 300px;
+    /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
+    /* background-image: repeating-radial-gradient(closest-side at 60% 55%, red , yellow , green); */
+    background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+    border-radius: 50%;
+}
+.shadow {
+    text-shadow: 2px 2px 10px rebeccapurple;
+    color: aliceblue;
+}
+p.test {
+    width: 11em;
+    /* word-wrap: break-word; */
+    border: 1px solid #555;
+    writing-mode: vertical-lr;
+}
+
+ /* div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 1s;
+   margin: 0;
+} */
+/* 
+div:hover {
+  width: 300px;
+  height: 300px;
+} */
+/* .trans {
+    float: inline-end;
+} */
+.object img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 60% 100%;
+}
+.mask1 {
+    mask-image: url(../img/border-image.png);
+    mask-repeat: no-repeat;
+    width: 600;
+    height: 400;
+}
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+ 
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+}
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}

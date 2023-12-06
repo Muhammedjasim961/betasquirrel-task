@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    .red {
+        color: red;
+    } 
+
+</style>
+<body>
+    <div class="input-container">
+        <!-- legend,Autofocus -->
+        <fieldset>
+            <legend>form Element</legend>
+         <form action="/action_page.php" autocomplete="on">
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname"><br><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br><br>
+        <input type="submit" name="submit" id="submit">
+        </fieldset>
+    </form>
+    </div>
+    <div>
+        <!-- lists -->
+        <form><br>
+           <input list="cars">
+           <datalist id="cars">
+            <option value="mahindra"></option>
+            <option value="toyota"></option>
+            <option value="glanza"></option>
+            <option value="hundai"></option>
+           </datalist>
+            <input type="submit">
+        </form>
+        <form>
+            <!-- date time -->
+            <label for="birthday">Birthday:</label><br>
+            <input type="date" id="birthday" name="birthday" min="1" max="31"><br>
+          </form><form action="/action_page.php"><br>
+            <label for="birthdaytime">Birthday (date and time):</label><br>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            <input type="submit" value="Submit">
+<br>
+<!-- image -->
+            <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br><br>
+        <input type="image" src="img/favicon.ico" width="30px" alt="submit">
+<br>
+<!-- File -->
+        <label for="myfile">Select File:</label><br>
+        <input type="file" name="myfile" id="myfile"><br><br>
+
+<!-- readonly , disabled , required, size-->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" readonly><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe" size="100" readonly>
+<!-- step --> <br>
+         <label for="points">Points:</label><br>
+            <input type="number" id="points" name="points" step="5" max="10">
+            <input type="submit" value="Submit">
+            </form>
+    </div>
+    <><br>
+        <!-- video -->
+        <video width="320" height="240" controls autoplay muted><br>
+            <source src="videos/VID_20201226_134201.mp4" type="video/mp4" style="height: 50px;">
+            <source src="videos/VID_20201226_134201.mp4" type="video/ogg" height="20px">
+            Your browser does not support HTML video.
+            </video>
+
+            <p>
+            Video courtesy of 
+            <a href="#" target="_blank">by plus two students</a>.
+            </p>
+
+            <audio controls autoplay muted>
+                <source src="Audio/back_lot_music_can_you_hear_the_music_by_ludwig_goransson_from_o.m4a" type="audio/mp4">
+                 <source src="Audio/back_lot_music_can_you_hear_the_music_by_ludwig_goransson_from_o.m4a" type="audio/ogg"><br>
+            </audio>
+            <audio controls>
+                 <source src="Audio/Church Fight - Anirudh Ravichander.m4a" type="audio/mp4">
+                 <source src="Audio/Church Fight - Anirudh Ravichander.m4a" type="audio/ogg">
+            </audio><br>
+             <object data="img/favicon.ico" ></object><br>
+             <embed src="img/car.jpeg" height="400px" width="auto">
+                <br><br>
+
+                   <!-- <iframe  src="https://www.youtube.com/embed/bL4Yr3Npxr8?si=By8vlnCpOLiX2FV2"></ifram> -->
+
+
+                
+                    <!-- BORDER-IMAGE -->
+                    <p class="borderimg">Border-image</p>
+                   
+                    <!-- <h1>The border-image Property</h1>
+
+                        <p>Here, the middle sections of the image are repeated to create the border:</p>
+                        <p id="borderimg">border-image: url(border.png) 30 round;</p>
+
+                        <p>Here is the original image:</p><img src="img/car.jpeg">
+                        <p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+
+                  </div>
+                  <div> -->
+                    <h2 class="text"> text</h2>
+
+                    <!-- css Background -->
+                    <div id="example1">
+                        <h1>Lorem ipsum dolo</h1>
+                        <p>iente nisi reiciendis voluptatem minima?</p>
+                    </div>
+
+                        <!-- <h1>Define Colors With RGBA Values</h1> -->
+
+                            <!-- <p id="p1">Red</p>
+                            <p id="p2">Green</p>
+                            <p id="p3">Blue</p>
+                            <p id="p4">Grey</p>
+                            <p id="p5">Yellow</p>
+                            <p id="p6">Cerise</p> -->
+                            <!-- <p id="p7">grey</p> -->
+
+
+                        <!-- <h1>Define Colors With HSL Values</h1>
+                              <div class="hsl-color">
+                                <p id="p1">green</p>
+                            <p id="p2">lightgreen</p>
+                            <p id="p3">dark green</p>
+                            <p id="p4">pastel green</p>
+                            <p id="p5">violet</p>
+                            <p id="p6">pastel violet</p>
+                            <p id="p7">blue</p> -->
+<!-- 
+                            <h1>Define Colors With HSLA Values</h1>
+
+                                <p id="p1">Green</p>
+                                <p id="p2">Light green</p>
+                                <p id="p3">Dark green</p>
+                                <p id="p4">Pastel green</p>
+                                <p id="p5">Violet</p>
+                                <p id="p6">Pastel violet</p> -->
+
+
+
+                              <h1>Define Colors With Opacity</h1>
+
+                                    <p id="p1">Red</p>
+                                    <p id="p2">Green</p>
+                                    <p id="p3">Blue</p>
+                                    <p id="p4">Grey</p>
+                                    <p id="p5">Yellow</p>
+                                    <p id="p6">Cerise</p>
+                              </div>  
+                              <h2 class="ex1"> background-color</h2> 
+                              <br>
+                              <h1 class="ex2"> transparent-color</h1>
+                            <br>
+                  <div class="grad1"></div>
+                  <div class="shadow"><h2>lorem ipsum loram ipsum</h2></div>
+
+                  <p class="test">Lorem ipsum dolor sit amet consectetur: adipisicing elit Facilis nisi itaque quae soluta distinctio harum velit inventore. atque vel rerum quidem recusandae,</p>
+
+                                <h1>The transition Property</h1>
+<!-- <br>
+                        <p>Hover over the div element below, to see the transition effect:</p>
+                        <div class="trans"></div> -->
+
+                        <!-- <div class="object">
+                            <img src="img/cars.png" alt="logo" />
+                            </div> -->
+
+                                    <br><br>
+                                            <h3>An image with a mask layer image:</h3>
+                                <div class="mask1">
+                                <img src="img/mask-image.jpg" alt="Cinque Terre" width="600" height="400">
+                                </div><br>
+
+                                <h3>Original image:</h3>
+                                <img src="img/mask-image.jpg" alt="Cinque Terre" width="600" height="400">
+
+                                    <h2>Hoverable Buttons</h2>
+
+                                    <p>Use the :hover selector to change the style of the button when you move the mouse over it.</p>
+                                    <p><strong>Tip:</strong> Use the transition-duration property to determine the speed of the "hover" effect:</p>
+
+                                    <button class="button button1">Green</button>
+                                    <button class="button button2">Blue</button>
+                                    <button class="button button3">Red</button>
+                                    <button class="button button4">Gray</button>
+                                    <button class="button button5">Black</button>
+                                    
+                                        
+
+    
+
+
+    
+
+    <!-- <object data="index.html"></object> -->
+   
+</body>
+</html>
