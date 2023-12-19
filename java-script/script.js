@@ -342,12 +342,135 @@
 
 //CHAINING
 
-const numberArray = [12, 34, 100, 50, 10];
+// const numberArray = [12, 34, 100, 50, 10];
  
-const newArray = numberArray
-    .map((value) => value)
-    .filter((data) => data > 10)
-    .sort((a, b) => a - b)
-    .reduce((total, value) => total + value, 0)
+// const newArray = numberArray
+//     .map((value) => value)
+//     .filter((data) => data > 10)
+//     .sort((a, b) => a - b)
+//     .reduce((total, value) => total + value, 0)
 
-console.log(newArray)
+// console.log(newArray)
+
+
+
+
+//PRACTICE 2023
+//spread Operator
+
+// const myObj = {
+//     name: 'mJAsim',
+//     age: 20,
+//     job: 'google'
+// }
+
+// const player1 = { ...myObj }
+
+// myObj.name = 'muhammed';
+// myObj.age = 22;
+// myObj.job = 'Microsoft'
+
+// console.log(player1)
+// console.log(myObj)
+
+
+
+//REST  CAN PICKUP ONLY ONE OR MORE ELEMENTS
+
+// const globalPlayer = {
+//     name: "jasim",
+//     id: 0,
+//     age: 20,
+// }
+
+// const {name, ...rest} = globalPlayer;
+// console.log(name)
+// console.log(rest)
+
+//ARROW FUNCTION
+
+// const myFunc = (value) => value + 20; console.log(myFunc(34))
+
+
+
+//FOR EACH
+// const globalPlayer = [
+//     {
+//         name: "Ansir",
+//         id: 1,
+//         age: 23,
+//     },
+//     {
+//         name: "Habeeb",
+//         id: 2,
+//         age: 23,
+//     },
+//     {
+//         name: "Mubashir",
+//         id: 2,
+//         age: 20,
+//     }
+// ];
+
+
+// const newArray = globalPlayer.filter((value) => value.age === 23 && value.id === 1)
+// console.log(newArray)
+
+//     globalPlayer.forEach((value, index, array) => console.log(value.name))
+// console.log(globalPlayer);
+
+//MAP METHOD
+
+//const newArray = globalPlayer.map((value) => value.name)
+//console.log(newArray)
+
+
+//FOR LOOP METHOD
+// const newArray = [];
+// for (let i = 0; i < globalPlayer.length; i++) {
+//     newArray.push(globalPlayer[i].name);
+// }
+// console.log(newArray)
+
+
+//REDUCE METHOD
+
+
+// const newArray = [22, 33, 44, 55, 66, 77]
+
+// const output = newArray.reduce((total, value) => total + value, 0)
+// console.log(output);
+
+
+///FIND METHOD
+
+// const globalPlayer = [
+//     {
+//         name: "Ansir",
+//         id: 1,
+//         age: 23,
+//     },
+//     {
+//         name: "Habeeb",
+//         id: 2,
+//         age: 23,
+//     },
+//     {
+//         name: "Mubashir",
+//         id: 2,
+//         age: 20,
+//     }
+// ];
+
+
+// const myObj = globalPlayer.find((value) => value.name)
+// console.log(myObj)
+
+
+// SORT METHOD
+
+const myArrey = [50, 90, 42, 63, 74];
+
+const  numberArray = myArrey.sort((a, b) => a - b);
+
+console.log(numberArray)

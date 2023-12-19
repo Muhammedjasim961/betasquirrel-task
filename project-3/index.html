@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-3</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="img/fontawesome-free-6.5.1-web/css/fontawesome.css" rel="stylesheet">
+    <link href="img/fontawesome-free-6.5.1-web/css/brands.css" rel="stylesheet">
+    <link href="img/fontawesome-free-6.5.1-web/css/solid.css" rel="stylesheet"
+</head>
+<body>
+    <div id="video-player">
+       <video id="video"> 
+        <source src="video/video.mp4" type="video/mp4">
+        </video>
+
+          <div class="costum-controls">
+            <div class="controls-container">
+                    <div class="progress-range" title="seek">
+                        <div class="progress-bar"></div>
+                            </div>
+                              <div class="control-groups"></div>
+                            <div class="controls-right">
+                                <div class="playback-speed">
+                                    <div class="speed" title="playback-speed">
+                                         <select name="playback-rate" class="player speed">
+                                        <option value="0.5">0.5 x</option>
+                                        <option value="0.25">0.25 x</option>
+                                        <option value="0.75">0.75 x</option>
+                                        <option value="Normal">Normal</option>
+                                        <option value="1.25">1.25 x</option>
+                                        <option value="1.5">1.5 x</option>
+                                        <option value="1.75">1.75 x</option>
+                                        <option value="2">2x</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <div class="start"><span>00:00</span></div>
+                                    <div class="end"><span>00:10</span></div>
+                                </div>
+                                <div class="screen" title="Full screen">
+                                    <div class="screen-icon">
+                                        <i class="fa-solid fa-expand fa-2xl" style=" margin-left: 15px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="controls-left">
+                            <div class="play-controls">
+                                <div class="play-icon" title="Play">
+                                      <i class="fa-solid fa-play fa-2xl" 
+                                     id="play-btn" style=" margin-top: 8px;"></i> 
+                                </div>             
+                            </div>
+                            <div class="volume">
+                                <div class="volume-icon" title="Mute">
+                                <i class="fa-solid fa-volume-high fa-2xl" id="volume-btn" style="margin-left: 45px;"></i>  
+                                </div>
+                                <div class="valume-range">
+                                    <div class="range-icon" title="Volume Adjust">
+                                        <i class="fa-solid fa-signal fa-2xl"></i>
+                                    </div>
+                                </div>
+
+                         </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

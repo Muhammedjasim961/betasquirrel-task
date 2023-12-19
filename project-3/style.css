@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+}
+#video-player {
+   height: calc(100% - 60px);
+}
+ video {
+    border-radius: 10px;
+    margin: 30px 150px;
+    width: calc(100% - 320px);
+    height: calc(100%);
+    border: 5px solid  black;
+    overflow: hidden;
+    cursor: pointer;
+}
+.play-controls {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+}
+.controls-left {
+    position: relative;
+    left: 14%;
+   transform: translateY(-90px);
+   bottom: 20px;
+   width: fit-content;
+   cursor: pointer;
+}
+.range-icon {
+    margin-left:  80px;
+    transform: translateY(-3px);
+}
+.controls-right {
+    display: flex;
+    position: relative;
+    left: 68%;
+    transform: translateY(-90px);
+    overflow: visible ;
+    cursor: pointer;
+    width: fit-content;
+}
+.playback-speed {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+    width: fit-content;
+    background-color: transparent;
+    margin-bottom: 13px;
+} 
+.volume {
+    display: flex;
+    width: fit-content;
+}
+option {
+    color: navy;
+    cursor: pointer;
+}
+.volume-icon {
+    width: 25px;
+    height: auto !important;
+}
+.volume-range {
+    display: flex;
+    width: 20%;
+}
+.range {
+    width: min-content;
+}
+.time {
+    margin-left: 90px;
+    color: antiquewhite;
+    font-weight: 600;
+    display: inline-flex;
+    font-size: 1.2rem;
+}
+.start {
+    margin-right: 5px;
+}
+.progress-bar {
+   position: absolute;
+   height: auto;
+}
+select {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+     /* color: var(--font-color); */
+}
+.progress-range:hover{
+  height: 10px;
+}
+.progress-bar {
+  background-color: rgb(0, 162, 255);
+  width: 0;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.progress-range {
+    position: relative;
+    width: calc(100% - 29%);
+    height: 8px;
+    background-color: rgba(202, 202, 202, 0.5);
+    border-radius: 5px;
+     left: 14%;
+    transform: translateY(-126px);
+    /* transition: all 0.5s ease; */
+    margin: 0;
+    position: absolute;
+    cursor: pointer;
+}
+.play-icon i, 
+.volume-icon i,
+ .range-icon i,
+ .screen-icon i,
+ .playback-speed{
+    font-size: 2rem;
+    color: #fff;
+}
+.play-icon:hover i, 
+.range-icon:hover i, 
+.volume-icon:hover i, 
+.volume-range:hover i,
+.screen-icon:hover i, 
+.playback-speed:hover i {
+    color:   rgb(0, 162, 255);
+}
+.start:hover,.end:hover {
+    color: rgb(0, 162, 255);
+}
+.control-groups {
+    height: 100%
+}
