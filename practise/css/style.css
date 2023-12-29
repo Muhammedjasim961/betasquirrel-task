@@ -100,7 +100,7 @@ div:hover {
 /* .trans {
     float: inline-end;
 } */
-.object img {
+/* .object img {
     width: 300px;
     height: 400px;
     object-fit: cover;
@@ -113,7 +113,7 @@ div:hover {
     height: 400;
 }
 .button {
-  background-color: #04AA6D; /* Green */
+  background-color: #04AA6D;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -122,7 +122,7 @@ div:hover {
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  transition-duration: 0.4s;
+  transition-duration: 0.1s;
  
 }
 
@@ -176,4 +176,4 @@ div:hover {
 .button5:hover {
   background-color: #555555;
   color: white;
-}
+} */

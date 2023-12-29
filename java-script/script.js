@@ -334,7 +334,7 @@
 // const numberSorted = numberArray.sort((a, b) => a - b)
 // console.log(numberArray)
 
-//ES10 ECMA SCRIPT 10  NESTED ARRAYS MULPTIPLE ARRAYS
+//ES10 ECMA SCRIPT 10  NESTED ARRAYS MULTIPLE ARRAYS
 
 // const newArray = [12, 23, [34, 45,], 78, 44, [89, 90,[78, 90],],[90,89,[99,45],],[67,78]]
 // console.log(newArray.flat(Infinity))
