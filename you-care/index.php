@@ -9,7 +9,7 @@
     <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
     <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css"> 
     <title>You-Care</title>
 </head>
 
@@ -22,7 +22,7 @@
                         <a class="navbar-brands" href="#">
                             <img src="img/logo2.webp" width="65" height="50">
                             <h2 title="You-Care">YOU CARE</h2>
-                        </a>
+                        </a>  
 
                         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-bar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
